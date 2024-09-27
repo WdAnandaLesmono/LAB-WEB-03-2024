@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #FF8DC7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;     
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FF8DC7;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #F675A8;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.hero {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #cfcfcf;
+    border-bottom: 0px solid #fff;
+}
+
+.hero1 {
+    margin-top: 150px;
+}
+
+.hero h3 {
+    margin-left: auto;
+    text-align: left;
+    font-size: xx-large;
+    font-size: 80px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: left;
+}
+
+.hero p {
+    text-align: left;
+}
+
+.hero img {
+    width: 370px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 0px solid #ffffff;
+    
+}
+
+.about {
+    padding: 50px;
+    background-color: #fff;
+    
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px;
+    margin-bottom: 70px;
+}
+h2 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-paragraph {
+    width: 48%;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.gallery {
+    padding: 50px 20px;
+    background-color: #cfcfcf;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.gallery-container div {
+    flex: 1 1 100%;
+    max-width: 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FF8DC7;
+    color: white;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact {
+    margin-left: 30px;
+}
+
+.social-media {
+    margin-right: 2px;
+}
+
+.contact p {
+    margin-left: 5px;
+}
+
+.social-media p {
+    margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero h3 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer img {
+        margin-bottom: 10px;
+        
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-paragraph {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+    
+
+    .gallery-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-items: center;
+        margin: 30px;
+    }
+
+    .gallery img {
+        display: flex;
+        justify-content: center;
+    
+    }
+    .gallery-container div {
+        flex: 1 1 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+
+
+}
+@media (max-width: 1164px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .hero h1 {
+       margin: 20px;
+    }
+}
