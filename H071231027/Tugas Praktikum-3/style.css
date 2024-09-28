@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: aliceblue;
+}
+
+.navbar-brand img {
+    margin-left: 25px;
+}
+
+
+.nav-link {
+    font-size: small;
+}
+
+.btn {
+    color: aliceblue;
+}
+
+.carousel-caption h1 {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 30px;
+    color: #ddd;
+}
+
+@media (max-width: 500px) {
+    .carousel-caption h1 {
+        font-size: 28px;
+        /* Ukuran lebih kecil untuk layar mobile */
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+h1 {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.card-group .btn {
+    color: rgb(108, 108, 108);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card:hover {
+    transition: all 0.3s ease;
+}
+
+.card-group .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+.card-img {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Warna overlay transparan */
+    ;
+    opacity: 0.5;
+    height: 50%;
+    width: 50%;
+}
+
+.card-group .btn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.container-1 {
+    display: flex;
+}
+
+.container-1 .img-fluid {
+    width: auto;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0 100%);
+    margin-left: -300px;
+    border-radius: 0px;
+}
+
+.img-logo {
+    height: 20px;
+    width: 300px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    .container-1{
+        flex-direction: column;
+        clip-path: none;
+    }
+
+    .container-1 .img-fluid {
+        /* Hapus clip-path untuk layar kecil */
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        margin-left: auto;
+        clip-path: none;
+
+    }
+
+    .img-logo {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
+
+#Models {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+.brand p {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 90px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.9;
+    color: #707070;
+}
+
+@media (max-width: 768px) {
+    .container-2{
+        display: flex;
+        flex-direction: column-reverse;
+        clip-path: none;
+    }
+    
+    .container-2 .img-1 {
+        /* Hapus clip-path untuk layar kecil */
+        width: 100%;
+        border-radius: 0;
+        margin-left: auto;
+        clip-path: none;
+    }
+
+    .img-logo-1 {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
+.container-2{
+    display: flex;
+}
+
+.img-1 {
+    width: 800px;
+    height: auto;
+    margin-top: 70px;
+    clip-path: polygon(30% 0, 100% 0%, 70% 100%, 0 100%);
+}
+
+.brand-1 p {
+    margin-top: 30px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.9;
+    color: #707070;
+    margin-left: 40px;
+}
+
+.container-3{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .container-3{
+        flex-direction: column;
+        clip-path: none;
+    }
+
+    .container-3 .img-2 {
+        /* Hapus clip-path untuk layar kecil */
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin-left: auto;
+        clip-path: none;
+
+    }
+
+    .img-logo {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
+.container-3{
+    display: flex;
+}
+.img-2 {
+    width: 800px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: -200px;
+    clip-path: polygon(30% 0, 100% 0%, 70% 100%, 0 100%);
+}
+
+.container-4{
+    display: flex;
+}
+@media (max-width: 768px) {
+    .container-4{
+        display: flex;
+        flex-direction: column-reverse;
+        clip-path: none;
+    }
+    
+    .container-4 .img-1 {
+        /* Hapus clip-path untuk layar kecil */
+        width: 100%;
+        border-radius: 0;
+        margin-left: auto;
+        clip-path: none;
+    }
+
+    .img-logo-1 {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
+.img-logo-1 {
+    height: 25px;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 90px;
+}
+
+.brand-2 p {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 90px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.9;
+    color: #707070;
+}
+.container-4{
+    display: flex;
+}
+
+.container-fluid1 {
+    display: flex;
+    border-radius: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* Sesuaikan ukuran sesuai kebutuhan */
+}
+
+
+.img-foot {
+    transition: all 0.3s ease;
+    /* Animasi yang halus ketika gambar berubah */
+    width: 100%;
+    /* Ukuran gambar default */
+    height: 100%;
+    /* Menjaga rasio aspek */
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.543);
+    /* Overlay dengan transparansi */
+    /* opacity: 1; */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container:hover .img-foot {
+    opacity: 0.8;
+    /* Gambar akan menjadi sedikit transparan */
+    transform: translateY(20px) scale(0.9);
+    /* Menggeser gambar ke bawah dan mengecilkan ukurannya */
+    border-radius: 20px;
+}
+
+
+.caption p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    margin-right: 400px;
+    margin-top: 200px;
+    line-height: 0;
+}
+
+.caption h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+@media (max-width: 1120px) {
+    .container-fluid1 {
+        flex-direction: column; /* Ubah urutan gambar menjadi vertikal */
+        align-items: center; /* Memusatkan gambar di tengah */
+    }
+
+    .image-container {
+        width: 80%; /* Setiap gambar mengambil 80% lebar layar kecil */
+    }
+
+    .caption p {
+        font-size: 30px; /* Kurangi ukuran font untuk layar kecil */
+        margin-left: 90px;
+    }
+
+    .caption h1 {
+        font-size: 50px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-fluid1 {
+        flex-direction: column; /* Ubah urutan gambar menjadi vertikal */
+        align-items: center; /* Memusatkan gambar di tengah */
+    }
+
+    .image-container {
+        width: 80%; /* Setiap gambar mengambil 80% lebar layar kecil */
+    }
+
+    .caption p {
+        font-size: 10px; /* Kurangi ukuran font untuk layar kecil */
+        margin-left: 90px;
+    }
+
+    .caption h1 {
+        font-size: 30px;
+        margin-left: 90px;
+    }
+}
+footer {
+    background-color: #333;
+    padding: 0.6px;
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col-md-4 {
+    flex-basis: 33.33%;
+    margin: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+
+#contact-form {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form button[type="submit"] {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: #ffcc00;
+}
