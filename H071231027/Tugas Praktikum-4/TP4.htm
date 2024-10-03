@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // NO 1
+        function countEvenNumbers(x, y) {
+            let evenNumber = []
+            for (let i = x; i <= y; i++) {
+                if (i % 2 == 0) {
+                    evenNumber.push(i)
+                }
+            }
+            return evenNumber
+        }
+        let x = parseInt(prompt("Masukkan Nilai Start = "))
+        let y = parseInt(prompt("Masukkan Nilai End = "))
+        console.log(countEvenNumbers(x, y))
+
+        // NO 2
+         let harga = prompt("Masukkan Harga Barang: ");
+         let daftar_diskon = [
+             { Elektronik: harga * 0.9, diskon: '10%'},
+             { Pakaian: harga * 0.8, diskon: '20%'},
+             { Makanan: harga * 0.95, diskon: '5%'},
+         ]
+
+         function capitalize(string) {
+             return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+         }
+
+         let jenis = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya): ");
+         let jenis1 = capitalize(jenis)
+
+         if (jenis1 == 'Elektronik') {
+            console.log("Harga awal: Rp.", harga)
+             console.log("Diskon: ", daftar_diskon[0].diskon)
+             console.log("Harga setelah diskon: ", daftar_diskon[0].Elektronik);
+         } else if (jenis1 == "Pakaian") {
+            console.log("Harga awal: Rp.", harga)
+             console.log("Diskon: ", daftar_diskon[1].diskon)
+             console.log("Harga setelah diskon: ", daftar_diskon[1].Pakaian);
+         } else if (jenis1 == "Makanan") {
+            console.log("Harga awal: Rp.", harga)
+             console.log("Diskon: ", daftar_diskon[2].diskon)
+             console.log("Harga setelah diskon: ", daftar_diskon[2].Makanan);
+         } else if ( jenis1 == "Lainnya"){
+            console.log("Harga awal: Rp.", harga)
+             console.log("Harga setelah diskon: Tidak ada");
+         }else{
+            console.log("Inputan Tidak Valid"); 
+         }
+
+        // No 3
+        let hariIni = prompt("Masukkan Hari ini: ");
+
+        function capitalize(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+        }
+
+        let hariIni1 = capitalize(hariIni);
+
+        // Pengecekan harus eksplisit untuk setiap kondisi
+        if (hariIni1 === 'Senin' || hariIni1 === 'Selasa' || hariIni1 === 'Rabu' ||
+            hariIni1 === 'Kamis' || hariIni1 === 'Jumat' || hariIni1 === 'Sabtu' || hariIni1 === 'Minggu') {
+
+            function hitungHari(n) {
+                let hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"];
+                let indeksHariIni = hari.indexOf(hariIni1);
+                let indeksHariN = (indeksHariIni + (n % 7)) % 7;
+                return hari[indeksHariN];
+            }
+
+            let hariKeDepan = parseInt(prompt("Berapa Hari Ke Depan: "));
+            console.log(`${hariKeDepan} hari dari ${hariIni1} adalah: ${hitungHari(hariKeDepan)}`);
+
+        } else {
+            console.log("Inputan tidak valid");
+        }
+
+        // No 4
+        let angkaAcak = Math.floor(Math.random()*101)
+        console.log(angkaAcak);
+        let percobaan = 0;
+        for (let i = 0; i <= 1; i++){
+            let tebak = parseFloat(prompt("Masukkan salah satu dari angka 1 sampai 100: "))
+            if (tebak > angkaAcak){
+                console.log("Terlalu tinggi! Coba lagi.")
+                percobaan += 1
+                i--;
+            }else if (tebak < angkaAcak){
+                console.log("Terlalu rendah! Coba lagi.")
+                percobaan += 1
+                i--;
+            } else if(tebak === angkaAcak){
+                percobaan +=1
+                console.log("Selamat! kamu berhasil menebak angka "+ tebak + " dengan benar.")
+                console.log("Sebanyak "+ percobaan + "x percobaan.");
+                break
+            }
+            else{
+                console.log("Inputan Tidak valid")
+                i--;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
