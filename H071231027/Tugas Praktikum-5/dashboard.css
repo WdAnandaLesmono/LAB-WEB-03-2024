@@ -1,0 +1,78 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ 
+}
+.container{
+    margin-top:150px;
+}
+.navbar {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 300;
+    margin-right: 20px;
+}
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+}
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.subtitle {
+    color: #f39c12;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.quote {
+    font-style: italic;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.author {
+    margin-bottom: 50px;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+.btn{
+    background: linear-gradient(90deg, black, white); /* Gradien dari hitam ke putih */
+    color: black; /* Warna teks hitam */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    background: linear-gradient(90deg, white, black); /* Gradien berbalik saat di-hover */
+    color: white; /* Warna teks berubah menjadi putih */
+}
+.btn{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('assets/Blackjack.jpg') no-repeat center center;
+    background-size: cover;
+}
