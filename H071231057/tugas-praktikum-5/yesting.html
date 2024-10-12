@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Master</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/Style/coba.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Carousel Background -->
+    <div id="backgroundCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/bj.png" class="d-block w-100 background-image" alt="Blackjack Background 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/bj1.png" class="d-block w-100 background-image" alt="Blackjack Background 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/bj3.png" class="d-block w-100 background-image" alt="Blackjack Background 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio for Music -->
+    <audio id="backgroundMusic" src="assets/audio/summertime-casino.mp3" loop></audio>
+
+    <!-- Content Overlay -->
+    <div class="overlay-content text-center d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1 class="title mb-4">BLACKJACK</h1>
+        <div class="menu-buttons">
+            <a href="index.html" class="btn btn-lg btn-primary mb-3">PLAY</a>
+            <a href="#" class="btn btn-lg btn-secondary mb-3" id="toggleMusic">MUSIC ON</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/Backend/music.js"></script>
+</body>
+</html>
