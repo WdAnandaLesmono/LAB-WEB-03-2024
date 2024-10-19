@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Audio for Music -->
+    <audio id="backgroundMusic" src="assets/audio/summertime-casino.mp3" loop></audio>
+    
+    <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100">
+        <div class="container-fluid justify-content-center gap-2">
+            <button class="btn btn-primary" id="buttonStart" onclick="startGame()">Start Game</button>
+            <button class="btn btn-warning" id="buttonHit" onclick="hit()">Hit</button>
+            <button class="btn btn-danger" id="buttonHold" onclick="hold()">Hold</button>
+            <button class="btn btn-secondary" id="toggleMusic" onclick="toggleMusic()">MUSIC ON</button>
+        </div>
+    </nav>
+
+    <!-- Bot Sidebar -->
+    <div class="enemy-sidebar sidebar">
+        <h4>Bot Sums</h4>
+        <h5 id="textBotSums"></h5>
+    </div>
+
+    <!-- Player Sidebar -->
+    <div class="player-sidebar sidebar">
+        <h4>Player Sums</h4>
+        <h5 id="textPlayerSums"></h5>
+        <h4>Player Cash</h4>
+        <h5 id="textPlayerMoney"></h5>
+        <h4>Bet</h4>
+        <h5 id="textPlayerBet"></h5>
+        <div class="bet-buttons">
+            <button class="btn btn-clear p-0 buttonBet" onclick="placeBet(50)">
+                <img src="assets/images/cards/BET-50.png" alt="50" class="img-fluid">
+            </button>
+            <button class="btn btn-clear p-0 buttonBet" onclick="placeBet(100)">
+                <img src="assets/images/cards/BET-100.png" alt="100" class="img-fluid">
+            </button>
+            <button class="btn btn-clear p-0 buttonBet" onclick="placeBet(200)">
+                <img src="assets/images/cards/BET-200.png" alt="200" class="img-fluid">
+            </button>
+            <button class="btn btn-clear p-0 buttonBet" onclick="placeBet(500)">
+                <img src="assets/images/cards/BET-500.png" alt="500" class="img-fluid">
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid vh-100 d-flex flex-column align-items-center justify-content-center bg-custom" style="overflow: hidden;">
+        <h4>Bot Deck</h4>
+        <div class="container d-flex flex-row align-items-center justify-content-center p-3" id="botDeckContainer">
+            <!-- Bot cards  -->
+        </div>
+        <h4>Player Deck</h4>
+        <div class="container d-flex flex-row align-items-center justify-content-center p-3" id="playerDeckContainer">
+            <!-- Player cards  -->
+        </div>
+    </div>
+      
+    <div class="modal fade" id="modalKalah" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <h1 class="text-light">Kalah</h1>
+        </div>
+    </div>
+    <div class="modal fade" id="modalMenang" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <h1 class="text-light">Menang</h1>
+        </div>
+    </div>
+    <div class="modal fade" id="modalGameOver" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <h1 class="text-light">Game Over</h1>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSeri" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <h1 class="text-light">Tie</h1>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStart" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deposito</h5>
+                </div>
+                <div class="modal-body d-flex flex-column justify-content-center">
+                    <input type="number" class="input-group" name="deposito" id="inputDeposito" required>
+                    <button class="btn btn-primary" id="startButton" onclick="startGame()">Start Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/Backend/script.js"></script>
+    <script src="assets/Backend/music.js"></script> 
+</body>
+</html>
