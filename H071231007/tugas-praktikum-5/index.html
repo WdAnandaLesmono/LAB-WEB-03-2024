@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-green-800 text-white min-h-screen flex flex-col justify-start items-center"
+  >
+    <h1 class="text-6xl font-bold mt-10 mb-8">BLACKJACK</h1>
+
+    <div class="text-center mb-8">
+      <p class="text-2xl mb-2">Saldo Anda: $<span id="balance">5000</span></p>
+      <label for="bet" class="text-lg block"
+        >Masukkan Taruhan Anda (min $100):
+      </label>
+      <input
+        type="number"
+        id="bet"
+        min="100"
+        value="100"
+        class="mt-2 mb-4 p-2 text-black rounded-lg"
+      />
+      <button
+        id="placeBet"
+        class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-2 rounded-lg"
+      >
+        judoll
+      </button>
+    </div>
+
+    <div class="flex justify-between w-full px-10 mb-8">
+      <!-- Bagian dealer -->
+      <div class="dealer w-1/2 flex flex-col items-center">
+        <h3 class="text-2xl mb-4">Dealer's Hand:</h3>
+        <div id="dealer-cards" class="flex justify-center space-x-2">
+          <!-- Kartu dealer akan dimasukkan di sini dengan script -->
+        </div>
+      </div>
+
+      <!-- Bagian player -->
+      <div class="player w-1/2 flex flex-col items-center">
+        <h3 class="text-2xl mb-4">Your Hand:</h3>
+        <div id="player-cards" class="flex justify-center space-x-2">
+          <!-- Kartu player akan dimasukkan di sini dengan script -->
+        </div>
+      </div>
+    </div>
+
+    <div id="result" class="text-2xl font-semibold mb-8"></div>
+
+    <!-- Tombol-tombol aksi -->
+    <div class="flex justify-center space-x-4 mb-8">
+      <button
+        id="hit"
+        style="display: none"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Hit
+      </button>
+      <button
+        id="stand"
+        style="display: none"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Stand
+      </button>
+      <button
+        id="continue"
+        style="display: none"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Continue
+      </button>
+      <button
+        id="restart"
+        style="display: none"
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Restart
+      </button>
+    </div>
+
+    <div id="game-over" style="display: none" class="text-center">
+      <h2 class="text-3xl font-bold">Game Over!</h2>
+      <p class="text-xl">Saldo Anda Habis.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

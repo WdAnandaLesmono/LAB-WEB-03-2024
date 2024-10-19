@@ -1,0 +1,24 @@
+body {
+    background-image: url("images/GreenTable.jpg");
+    background-position: cover;
+}
+
+#dealer-cards, #player-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ini memastikan bahwa kartu dealer tidak terpotong */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.card img {
+    width: 130px;  /* Lebar kartu yang baru */
+    height: 180px; /* Tinggi kartu yang baru */
+    object-fit: contain; /* Memastikan gambar kartu utuh */
+    border-radius: 5px; /* Untuk memperindah tampilan tepi kartu */
+    margin: 0 10px; /* Menambahkan jarak antar kartu */
+}
+
+.hidden-card {
+    opacity: 0.5; /* Membuat kartu tertutup sedikit lebih gelap untuk efek */
+}
