@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-image: url('assets/img/harvard-1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 120px 0px 120px 0px; */
+    padding: 50px 0px 50px 0px;
+}
+
+#fluid {
+    background-color: rgba(255, 255, 255, 0.508);
+    color: white;
+    border-radius: 20px;
+
+}
+
+.logo-univ{
+    margin-right: 250px;
+    margin-top: 0px;
+    background: transparent;
+    /* backdrop-filter: blur(5px); */
+    max-width: 230px;
+    max-height: 80px;
+    margin-left: -350px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    /* padding: 20px 20px 20px 20px; */
+
+}
+
+.logo-univ img{
+    max-width: 200px;
+    max-height: 100px;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+}
+
+.card {
+    background: transparent;
+    border: none;
+    border-radius: 23px;
+    /* box-shadow: 0 10px 20px #ffffff30, 0 6px 6px #0000003b; */
+    padding: 0px 60px 0px 60px;
+    /* max-height: 500px; */
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+    backdrop-filter: blur(2px);
+    color: white;
+
+}
+
+.embe {
+    /* background: #ffffffb6; */
+    /* border-radius: 22px; */
+    padding: 20px;
+    text-align: left;
+    /* backdrop-filter: blur(2px); */
+    background: transparent;
+    /* margin-bottom: 10px; */
+    border-bottom-left-radius: 22px;
+    padding-top: 15px;
+    margin-top: 0px;
+    /* padding: 60px; */
+
+}
+
+.embe-duk {
+    /* background-color: #dcd9d9bd; */
+    background: transparent;
+
+}
+
+.card-header {
+    background: #400000bf;
+    border-radius: 22px 22px 0 0 !important;
+    /* padding: 20px; */
+    text-align: center;
+    backdrop-filter: blur(2px);
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid white;
+}
+
+.card-header h4 {
+    font-size: 35px;
+    color: white;
+}
+
+.card-body {
+    background-color: #400000bf;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 20px 25px 35px 25px;
+    /* margin-top: 20px; */
+    /* padding: 40px; */
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background: #ffd900;
+    border: none;
+    padding: 15px;
+    color: #290000;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    max-width: 425px;
+    max-height: 400px;
+    margin-left: 20px;
+    margin-bottom: -15px;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #050021;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px #0000001a, 0 3px 6px #0000001a;
+}
+
+.form-control {
+    /* border-radius: 10px; */
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    /* border: 1px solid #ced4da; */
+
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px #ffffff33;
+    border-color: #ffffff;
+    /* background-color: rgba(255, 232, 232, 0.811); */
+
+}
+
+.form-label {
+    /* color: var(--ui-dark); */
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: -30px;
+    margin-left: 12px;
+    /* margin-left: -200px; */
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.login-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.login-link:hover {
+    color: #ffd900;
+    text-decoration: none;
+    /* background-color: #ffd900; */
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.animated {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.password-requirements {
+    font-size: 15px;
+    color: #ffffff;
+    margin-left: 5px;
+    margin-top: 7px;
+    /* margin-left: -50px; */
+}
+
+.alert ul {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    border-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.alert-success a {
+    color: #1b5e20;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background-color: #ffebee;
+    border-color: #06001b;
+    color: 
+    #c62828;
+}
+
+#mata {
+    padding: 10px;
+    height: 60px;
+    width: 50px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+
+}
+
+#mata i{
+    margin-left: 5px;
+}

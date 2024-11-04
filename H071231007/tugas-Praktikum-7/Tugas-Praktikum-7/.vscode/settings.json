@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.CustomBrowser": "chrome",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.wordWrap": "on",
+    // "workbench.iconTheme": "material-icon-theme",
+    // "workbench.colorTheme": "Material Theme",
+
+}
