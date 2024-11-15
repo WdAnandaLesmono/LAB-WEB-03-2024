@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding-top: 30px;
+}
+
+footer {
+    background-color: #1274d5;  
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-custom {
+    background-color: #166fc9;
+    position: fixed;
+    width: 100%;
+    flex : 1;
+    
+}
+
